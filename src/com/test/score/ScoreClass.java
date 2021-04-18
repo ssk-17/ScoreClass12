@@ -11,7 +11,7 @@ public class ScoreClass {
         String filePath = args[0];
         BufferedReader br = new BufferedReader(new FileReader(new File(filePath)));
 
-        //create instance of IndexScoring
+        //create instance of Chronological sorting.
         ScoringTechnique scoringTechnique = new ChronologicalScoring();
 
         System.out.println("Score Obtained: " + scoringTechnique.calculateScore(br.readLine()));
