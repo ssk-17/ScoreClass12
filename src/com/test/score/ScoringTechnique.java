@@ -3,12 +3,10 @@ package com.test.score;
 import java.math.BigInteger;
 
 /*
- *  Scoring Technique interface provides method
- *  to score the text provided in the file
- *  Each class implementing this interface will
- *  have their customized scoring mechanism
- * */
+ *  Scoring Technique interface provides method to calculate score based on text provided in file
+ *  Class implementing this interface will have their customized scoring technique
+ */
 public interface ScoringTechnique {
 
-    BigInteger findScore(String text);
+    BigInteger calculateScore(String text);
 }

@@ -4,7 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 
-public class Main {
+public class ScoreClass {
 
     public static void main(String[] args) throws Exception {
 
@@ -12,8 +12,8 @@ public class Main {
         BufferedReader br = new BufferedReader(new FileReader(new File(filePath)));
 
         //create instance of IndexScoring
-        ScoringTechnique scoringTechnique = new IndexScoring();
+        ScoringTechnique scoringTechnique = new ChronologicalScoring();
 
-        System.out.println("Index Based scoring: " + scoringTechnique.findScore(br.readLine()));
+        System.out.println("Score Obtained: " + scoringTechnique.calculateScore(br.readLine()));
     }
 }
